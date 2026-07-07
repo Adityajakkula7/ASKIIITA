@@ -1,6 +1,28 @@
 # AskIIITA 🎓
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://askiiita.streamlit.app/)
+
 > An AI-powered RAG chatbot for IIIT Allahabad — ask questions about academics, fees, calendar, placements, and more. Powered by **Gemini** + **MongoDB Atlas Vector Search** + **LangChain** + **Streamlit**.
+
+---
+
+## 🚀 Live Deployment (Streamlit Community Cloud)
+
+You can host this chatbot for **100% free** using Streamlit's Community Cloud:
+
+1. Go to **[share.streamlit.io](https://share.streamlit.io/)** and log in with your GitHub account.
+2. Click **New app** at the top right.
+3. Select your repository: `Adityajakkula7/ASKIIITA`, branch: `main`, and main file path: `app.py`.
+4. Click the **Advanced settings** gear icon.
+5. In the **Secrets** text area, paste your environment variables (from your `.env` file):
+   ```toml
+   MONGO_URI = "your_mongodb_atlas_uri"
+   GEMINI_API_KEY = "your_gemini_api_key"
+   MONGO_DB_NAME = "askiiita"
+   MONGO_COLLECTION_NAME = "documents"
+   ATLAS_VECTOR_SEARCH_INDEX = "vector_index"
+   ```
+6. Click **Deploy**. Your app will be live at `https://askiiita.streamlit.app/`!
 
 ---
 
@@ -98,13 +120,13 @@ Open [http://localhost:8501](http://localhost:8501) in your browser.
 User Question
       │
       ▼
-Gemini Embedding (text-embedding-004)
+Gemini Embedding (gemini-embedding-001)
       │
       ▼
 MongoDB Atlas Vector Search  ─────► Top-4 relevant chunks
       │
       ▼
-Gemini LLM (gemini-1.5-flash)
+Gemini LLM (gemini-2.5-flash-lite)
   + System Prompt + Chunks
       │
       ▼
