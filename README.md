@@ -1,8 +1,20 @@
 # AskIIITA 🎓
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://askiiita.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://askiiita-ho9yu3qufn9gvthgu45rzn.streamlit.app/)
 
 > An AI-powered RAG chatbot for IIIT Allahabad — ask questions about academics, fees, calendar, placements, and more. Powered by **Gemini** + **MongoDB Atlas Vector Search** + **LangChain** + **Streamlit**.
+
+![AskIIITA UI Screenshot](images/ui_screenshot.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend & UI**: Streamlit (custom glassmorphism, responsive sidebar widgets, unscrollable layout wrapper)
+- **Orchestration**: LangChain (RAG retrieval chain, document loader, and text splitting)
+- **Vector Database**: MongoDB Atlas (Vector Search Index, cosine similarity)
+- **Large Language Model**: Gemini (`gemini-2.5-flash-lite` for RAG responses)
+- **Embeddings Model**: Gemini (`gemini-embedding-001`)
 
 ---
 
@@ -22,7 +34,7 @@ You can host this chatbot for **100% free** using Streamlit's Community Cloud:
    MONGO_COLLECTION_NAME = "documents"
    ATLAS_VECTOR_SEARCH_INDEX = "vector_index"
    ```
-6. Click **Deploy**. Your app will be live at `https://askiiita.streamlit.app/`!
+6. Click **Deploy**. Your app will be live at `https://askiiita-ho9yu3qufn9gvthgu45rzn.streamlit.app/`!
 
 ---
 
